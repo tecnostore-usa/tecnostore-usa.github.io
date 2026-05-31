@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoStore | Elite Hardware Upgrades</title>
+    <!-- Vinculación al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- TOP FIXED NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Tecno<span>Store</span></a>
+    </nav>
+
+    <header>
+        <h1>OPTIMIZED <span>ELITE HARDWARE</span></h1>
+        <p>Maximize your PC performance instantly. Top-selling upgrade components recommended by experts for your tech setup.</p>
+        <a href="#products" class="btn">View Current Deals</a>
+    </header>
+
+    <section class="section">
+        <h2>Why Professionals <span>Choose Us</span></h2>
+        <div class="grid">
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 15px;">🚀</div>
+                <h3 style="text-align: center; font-size: 1.3rem;">Fast & Secured Shipping</h3>
+                <p style="text-align: center; margin: 0;">Priority US fulfillment logistics featuring heavy-duty, impact-resistant factory packaging.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 15px;">🛠️</div>
+                <h3 style="text-align: center; font-size: 1.3rem;">Verified Benchmarks</h3>
+                <p style="text-align: center; margin: 0;">Hardware extensively tested under extreme stability standards ensuring maximum transfer rates.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 15px;">💳</div>
+                <h3 style="text-align: center; font-size: 1.3rem;">Direct Manufacturer Warranty</h3>
+                <p style="text-align: center; margin: 0;">Full official manufacturer coverage and dedicated tech support for your peace of mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="products">
+        <h2>Best-Selling <span>Upgrade Components</span></h2>
+        <div class="grid">
+            <!-- PRODUCT 1: SAMSUNG 990 PRO SSD -->
+            <div class="card">
+                <div>
+                    <div class="product-box">
+                        <img src="assets/img/ssd.jpg" alt="Samsung 990 PRO SSD" class="product-img">
+                    </div>
+                    <h3>Samsung 990 PRO SSD 2TB NVMe M.2</h3>
+                    <p>Experience extreme speeds up to 7,450 MB/s. Engineered for high-level computing, competitive gaming, and heavy workloads while eliminating loading screens via its next-gen PCIe Gen4 interface.</p>
+                </div>
+                <a href="#" target="_blank" class="btn btn-affiliate" data-product="ssd" style="width: 100%;">View Deal on Amazon</a>
+            </div>
+            
+            <!-- PRODUCT 2: CORSAIR VENGEANCE DDR5 -->
+            <div class="card">
+                <div>
+                    <div class="product-box">
+                        <img src="assets/img/ram.jpg" alt="Corsair Vengeance RGB DDR5 RAM" class="product-img">
+                    </div>
+                    <h3>CORSAIR Vengeance RGB DDR5 RAM 32 GB</h3>
+                    <p>Premium 32GB (2 x 16 GB) desktop memory kit running up to 6000MHz. Fully optimized for Intel XMP 3.0 (CL36-44-44-96), delivering lightning-fast multitasking and fluid streaming performance at 1.35V.</p>
+                </div>
+                <a href="#" target="_blank" class="btn btn-affiliate" data-product="ram" style="width: 100%;">View Deal on Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TecnoStore. High-performance computing hardware and elite upgrade solutions.</p>
+        <!-- MANDATORY AMAZON USA DISCLOSURE -->
+        <p class="disclaimer">AMAZON AFFILIATE DISCLOSURE: As an Amazon Associate, this website earns from qualifying purchases. When you click on the links to various merchants on this site and make a purchase, this can result in this site earning a commission at no additional cost to you. Affiliate programs and affiliations include, but are not limited to, the Amazon Services LLC Associates Program.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.btn-affiliate').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const producto = this.getAttribute('data-product');
+                console.log('Affiliate click tracking registered for: ' + producto);
+            });
+        });
+    </script>
+</body>
+</html>
